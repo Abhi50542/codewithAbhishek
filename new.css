@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Bruno+Ace&family=Dancing+Script:wght@500&family=Lobster&family=Outfit:wght@300&family=Poppins:wght@400;500&family=Roboto&family=Source+Code+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(/images/code-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.banner-text {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+.banner-text h1 {
+    font-size: 70px;
+    font-family: 'Lobster', cursive;
+}
+
+.banner-text p {
+    font-size: 20px;
+    font-style: italic
+}
+
+.banner-btn {
+    margin: 70px auto 0;
+}
+
+.banner-btn a {
+    width: 140px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 9px 0;
+    color: white;
+    border: 0.3px solid white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.banner-btn a:hover {
+    background-color: white;
+    color: black;
+}
+
+#sidenav {
+    width: 140px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: linear-gradient(90deg, rgb(248, 176, 248), rgb(46, 185, 239));
+    z-index: 2;
+    transition: 0.5s;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+#menubtn {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 60%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menubtn img {
+    /* width: 20px;
+    margin-top: 15px; */
+    width: 21px;
+    margin-top: -2px;
+    margin-right: -45px;
+}
+
+@media screen and (max-width: 770px){
+    .banner-text h1 {
+        font-size: 34px;
+        
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+    
+}
